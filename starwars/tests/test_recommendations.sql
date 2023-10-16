@@ -13,7 +13,7 @@
         customer_name   | vacation_type
         'Darth Vader'   | 'volcanoes'
         'Luke Skywalker'| 'desert'
-        'Leia Organa'   | 'grasslands, mountains'
+        'Leia Organa'   | 'mountains, grasslands'
     {% endcall %}
 
     {% call dbt_unit_testing.expect() %}
