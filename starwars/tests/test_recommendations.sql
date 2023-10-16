@@ -9,17 +9,17 @@
     {% endcall %}
 
     {% call dbt_unit_testing.mock_ref('preferences') %}
-        customer_name | vacation_type
-        'Darth' | 'caves, volcanoes'
-        'Leia'  | 'grasslands'
-        'Luke'  | 'desert'
+        customer_name   | vacation_type
+        'Darth Vader'   | 'caves, volcanoes'
+        'Leia Organa'   | 'grasslands'
+        'Luke Skywalker'| 'desert'
     {% endcall %}
 
     {% call dbt_unit_testing.expect() %}
-        customer_name | recommended_planet
-        'Darth' | 'Mustafar'
-        'Leia'  | 'Alderaan'
-        'Luke'  | null
+        customer_name   | recommended_planet
+        'Darth Vader'   | 'Mustafar'
+        'Leia Organa'   | 'Alderaan'
+        'Luke Skywalker'| null
     {% endcall %}
   {% endcall %}
 
