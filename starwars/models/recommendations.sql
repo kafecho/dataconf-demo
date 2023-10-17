@@ -1,4 +1,3 @@
--- SELECT
 SELECT
     preferences.customer_name,
     planets.name as recommended_planet 
