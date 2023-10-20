@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: characters_and_planets
+    columns:
+      - name: name
+        tests:
+          - unique
