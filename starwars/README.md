@@ -1,15 +1,21 @@
-Welcome to your new dbt project!
+# TDD for Data Pipelines
 
-### Using the starter project
+## Overview
 
-Try running the following commands:
-- dbt run
-- dbt test
+This git project contains the source code for 2 live demos for DataConf 23 held in South Africa. 
 
+## Requirements
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+* Docker and docker-compose (I use Rancher Desktop with Moby)
+* A version of dbt installed with the Postgres adapter
+
+Run dbt seed to populate PostgreSQL from the sample files. 
+
+## How to use
+
+I use git branches to progress the demo (live coding without having to type). 
+
+For the simple dbt demo, start from datapipeline-0 and make you way up.
+For the TDD demo, start from tdd-0 and make your way up. 
+
+Run dbt run to populate the models and dbt test to run the tests.
